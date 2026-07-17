@@ -4124,65 +4124,66 @@ Commanders of the Sixth Realm are acclimated to the various toxins and pheromone
 #aiassmod -100
 #end
 
-	#newspell
-	#copyspell 1334 -- "Enslave Mind"
-	#restricted 169
-	#name "Subjugate Demons"
-	#descr "Secondary spell for Binding of Lilith."
-	#school -1
-	#researchlevel -1
-	#path 0 8
-	#pathlevel 0 7
-	#path 1 7
-	#pathlevel 1 5
-	#fatiguecost 400
-	#aoe 666
-	-- #effect 29
-	#casttime 200
-	#spec 25968776 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
-	#end
+	-- #selectspell 7101
+	-- #copyspell 1334 -- "Enslave Mind"
+	-- #restricted 169
+	-- #name "Subjugate Demons"
+	-- #descr "Secondary spell for Binding of Lilith."
+	-- #school -1
+	-- #researchlevel -1
+	-- #path 0 8
+	-- #pathlevel 0 7
+	-- #path 1 7
+	-- #pathlevel 1 5
+	-- #fatiguecost 400
+	-- #aoe 666
+	-- -- #effect 29
+	-- #casttime 200
+	-- #spec 25968776 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
+	-- #end
 
-#newspell
-#copyspell "Master Enslave"
+#selectspell 7102
+#copyspell 1372 -- "Master Enslave"
 #restricted 169
 #name "Binding of Lilith"
 #descr "Unleashes the immeasurable power of the new Demon God, whose mere presence forces demons to kneel. All demons who fail to resist are permanently bound to the caster's will."
+#details "Targets lose commander status"
 #school 6
 #researchlevel 8
 #path 0 8
 #pathlevel 0 9
 #fatiguecost 500
 #casttime 200
--- #spec 544776
-#nextspell "Subjugate Demons"
+#spec 25968776 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
+-- #nextspell "Subjugate Demons"
 #aiassmod -100
 #aispellmod 100
 #end
 
-	#newspell
-	#copyspell 1334 -- "Enslave Mind"
-	#restricted 169
-	#name "Enslave Mortals"
-	#descr "Secondary spell for Beauty of Lilith."
-	#school -1
-	#researchlevel -1
-	#path 0 8
-	#pathlevel 0 7
-	#path 1 7
-	#pathlevel 1 5
-	#fatiguecost 400
-	#aoe 666
-	-- #effect 29
-	#casttime 200
-	#spec 831275136 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
-	#end
+	-- #selectspell 7103
+	-- #copyspell 1334 -- "Enslave Mind"
+	-- #restricted 169
+	-- #name "Enslave Mortals"
+	-- #descr "Secondary spell for Beauty of Lilith."
+	-- #school -1
+	-- #researchlevel -1
+	-- #path 0 8
+	-- #pathlevel 0 7
+	-- #path 1 7
+	-- #pathlevel 1 5
+	-- #fatiguecost 400
+	-- #aoe 666
+	-- -- #effect 29
+	-- #casttime 200
+	-- #spec 831275136 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
+	-- #end
 
-#newspell
-#copyspell "Master Enslave"
+#selectspell 7104
+#copyspell 1372 -- "Master Enslave"
 #restricted 169
 #name "Beauty of Lilith"
 #descr "Entraps the entire enemy army in a waking dream, where they behold the embodiment of beauty. No mortal can resist falling to their knees and weep, but for the weak of mind, their psyche will be invaded with thoughts of sheer love and devotion, and they will desire nothing more than to serve her - the succubus of their dreams."
-#details "May only be cast once per round. Targets lose commander status"
+#details "Targets lose commander status"
 #school 6
 #researchlevel 9
 #path 0 8
@@ -4192,7 +4193,8 @@ Commanders of the Sixth Realm are acclimated to the various toxins and pheromone
 #fatiguecost 400
 -- #effect 29
 #casttime 200
-#nextspell "Enslave Mortals"
+#spec 831275136 -- No demon, no undead no unanimate, no minless, enemy only, easy mr
+-- #nextspell "Enslave Mortals"
 #aispellmod 100
 #aiassmod -100
 #end

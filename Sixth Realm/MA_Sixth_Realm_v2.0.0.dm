@@ -1,4 +1,4 @@
-#modname "MA Sixth Realm v.2.0.0"
+#modname "MA Sixth Realm v2.0.0"
 #description "Adds a faction of succubi and their human subjects. Static version recommended for long-lasting multiplayer matches."
 #version 2.0.0
 #icon "./SixthRealm/banner.tga"
